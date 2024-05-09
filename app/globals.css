@@ -3,31 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: #E9FAFF;
+  --fore-color: #AAA;
+  --primary-color: #88C6E5;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: #E9FAFF;
+    --fore-color: #AAA;
   }
 }
-
+.top{
+  background-color: #E1ECED;
+  border-color: #A6D3E8;
+  color: #999;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--fore-color);
+  background: var(--foreground-rgb);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.back-primary{
+  background: var(--primary-color);
+}
+.font-primary{
+  color: var(--primary-color);
+}
+.box-wrap{
+  background: none repeat scroll 0 0 #FEF9EF;
+  border-color: #C3DFEA;
+}
+.link-active{
+  color: #6F78A7;
+}
+.indent-2{
+  text-indent: 2em;
+}
+.rank-title{
+  background-color: #EEE;
+  border-color: #D7D7D7;
+}
+.btn-detail{
+  @apply w-11/12 h-10 leading-10 text-center text-white rounded-sm ml-2
+}
+.recom-title {
+  @apply px-2 leading-9 border-b-2 bg-gray-100;
 }
