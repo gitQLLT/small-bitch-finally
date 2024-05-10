@@ -5,7 +5,7 @@ import { Search } from 'lucide-react';
 
 const MbIndex = ()=>{
   return <>
-    <div className="grid grid-cols-5 text-base bg-gray-100 border-b-4">
+    <div className="grid grid-cols-5 text-base bg-gray-100 border-b-2">
       {
         Array.from({length: 10}, (_,i)=>i).map(item=>
           <div key={item} className="flex justify-center items-center px-2 py-1.5">
