@@ -19,7 +19,7 @@
   border-color: #A6D3E8;
   color: #999;
 }
-body {
+.pc {
   color: var(--fore-color);
   background: var(--foreground-rgb);
 }
@@ -44,8 +44,8 @@ body {
   border-color: #D7D7D7;
 }
 .btn-detail{
-  @apply w-11/12 h-10 leading-10 text-center text-white rounded-sm ml-2
+  @apply w-11/12 h-10 leading-10 text-center text-white rounded-sm ml-2;
 }
 .recom-title {
-  @apply px-2 leading-9 border-b-2 bg-gray-100;
+  @apply text-base px-2 leading-9 border-b-2 bg-gray-100;
 }

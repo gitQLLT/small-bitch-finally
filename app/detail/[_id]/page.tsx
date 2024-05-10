@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Detail = ()=>{
+const Detail = (props:any)=>{
+  console.log(props)
   return <>
     <div className="mt-2.5 box-wrap border-2 pb-2">
       <div className="recom-title text-black mb-2.5">recommand&nbsp;&gt;&nbsp;recommand&nbsp;&gt;&nbsp;recommand</div>

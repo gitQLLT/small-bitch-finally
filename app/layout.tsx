@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from '../components/Common/Header'
 import Footer from '../components/Common/Footer'
+import MbHeader from '../components/Common/MbHeader'
+import MbFooter from '../components/Common/MbFooter'
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,11 +18,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="text-sm">
-        <div className="top leading-8 border-b">top</div>
-        <div className="container max-w-5xl mx-auto">
-          <Header></Header>
+        <div className="pc hidden sm:block">
+          <div className="top leading-8 border-b">top</div>
+          <div className="container max-w-5xl mx-auto">
+            <Header></Header>
+            {children}
+            <Footer></Footer>
+          </div>
+        </div>
+        <div className="mobile block sm:hidden">
+          <MbHeader></MbHeader>
           {children}
-          <Footer></Footer>
+          <MbFooter></MbFooter>
         </div>
       </body>
     </html>
